@@ -3,15 +3,11 @@ package com.minhhn;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * Hello world!
- *
- */
 @SpringBootApplication
-public class App 
+public class GenomicApplication
 {
     public static void main( String[] args )
     {
-        SpringApplication.run(App.class);
+        SpringApplication.run(GenomicApplication.class);
     }
 }
