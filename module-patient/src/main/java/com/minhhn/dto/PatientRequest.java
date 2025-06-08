@@ -1,11 +1,15 @@
 package com.minhhn.dto;
 
 import jakarta.validation.constraints.NotBlank;
-import lombok.Getter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-@Getter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class PatientRequest {
     @NotBlank
     private String fullName;
