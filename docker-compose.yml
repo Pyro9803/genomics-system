@@ -1,4 +1,10 @@
 services:
+  gatk:
+    image: broadinstitute/gatk:4.5.0.0
+    volumes:
+      - ./data:/data
+    working_dir: /data
+
   db:
     image: postgres:17
     container_name: postgres_db
@@ -18,6 +24,7 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
+
 
 volumes:
   postgres_data:

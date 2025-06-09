@@ -33,5 +33,10 @@
             <artifactId>module-patient</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.minhhn</groupId>
+            <artifactId>module-sample</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

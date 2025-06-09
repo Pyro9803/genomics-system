@@ -9,9 +9,8 @@ import java.time.LocalDate;
 
 @Data
 @Entity
-@Table(name = "patients")
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,7 +18,6 @@ public class Patient {
 
     @Column(unique = true, nullable = false)
     private String patientCode;
-
     private String fullName;
     private LocalDate dateOfBirth;
     private String gender;
